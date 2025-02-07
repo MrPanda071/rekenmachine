@@ -16,7 +16,7 @@ public class Main {
   static JFrame frame = new JFrame("rekenmachine");
 
   public static void main(String[] args) {
-    // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(width, height);
 
     frame.setLayout(new GridBagLayout());
