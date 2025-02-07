@@ -57,6 +57,7 @@ public class Main {
   }
 
   public static void addnum(String buttonInput) {
+     frame.requestFocusInWindow();
     if (op != "" || a == "") {
       b += buttonInput;
     }
@@ -72,6 +73,7 @@ public class Main {
   }
 
   public static void setoperator(String buttonInput) {
+     frame.requestFocusInWindow();
     if (b != "") {
       calculate();
     }
@@ -80,6 +82,7 @@ public class Main {
   }
 
   public static void calculate() {
+     frame.requestFocusInWindow();
     System.out.println(String.format("%s %s %s", a, op, b));
     if (op == "*") {
       a = String.valueOf(getnumber(a) * getnumber(a));
