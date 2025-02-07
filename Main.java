@@ -27,6 +27,33 @@ public class Main {
         if (keyCode == 48 || keyCode == 96) {
           addnum("0");
         }
+        else if (keyCode == 49 || keyCode == 97) {
+          addnum("1");
+        }
+        else if (keyCode == 50 || keyCode == 98) {
+          addnum("1");
+        }
+        else if (keyCode == 51 || keyCode == 99) {
+          addnum("1");
+        }
+        else if (keyCode == 52 || keyCode == 100) {
+          addnum("1");
+        }
+        else if (keyCode == 53 || keyCode == 101) {
+          addnum("1");
+        }
+        else if (keyCode == 54 || keyCode == 102) {
+          addnum("1");
+        }
+        else if (keyCode == 55 || keyCode == 103) {
+          addnum("1");
+        }
+        else if (keyCode == 56 || keyCode == 104) {
+          addnum("1");
+        }
+        else if (keyCode == 57 || keyCode == 105) {
+          addnum("1");
+        }
       }
     });
 
