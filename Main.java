@@ -14,17 +14,21 @@ public class Main {
   static Font buttonfont = new Font("Arial", Font.PLAIN, 40);
   static JLabel Label = new JLabel("testing 123");
   static JFrame frame = new JFrame("rekenmachine");
+
   public static void main(String[] args) {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(width, height);
     frame.setFocusable(true);
-        frame.requestFocusInWindow();
+    frame.requestFocusInWindow();
     frame.addKeyListener(new KeyAdapter() {
-            public void keyPressed(KeyEvent e) {
-                int keyCode = e.getKeyCode();
-                System.out.println("Key pressed: " + keyCode);
-            }
-          });
+      public void keyPressed(KeyEvent e) {
+        int keyCode = e.getKeyCode();
+        System.out.println("Key pressed: " + keyCode);
+        if (keyCode == 48 || keyCode == 96) {
+          addnum("0");
+        }
+      }
+    });
 
     frame.setLayout(new GridBagLayout());
     GridBagConstraints gbc = new GridBagConstraints();
@@ -57,7 +61,7 @@ public class Main {
   }
 
   public static void addnum(String buttonInput) {
-     frame.requestFocusInWindow();
+    frame.requestFocusInWindow();
     if (op != "" || a == "") {
       b += buttonInput;
     }
@@ -73,7 +77,7 @@ public class Main {
   }
 
   public static void setoperator(String buttonInput) {
-     frame.requestFocusInWindow();
+    frame.requestFocusInWindow();
     if (b != "") {
       calculate();
     }
@@ -82,7 +86,7 @@ public class Main {
   }
 
   public static void calculate() {
-     frame.requestFocusInWindow();
+    frame.requestFocusInWindow();
     System.out.println(String.format("%s %s %s", a, op, b));
     if (op == "*") {
       a = String.valueOf(getnumber(a) * getnumber(a));
