@@ -5,9 +5,9 @@ import javax.swing.*;
 public class Main {
   final static short width = 600;
   final static short height = 700;
-  static String a = "0";
-  static String b = "0";
-  static String op = "0";
+  static String a = "";
+  static String b = "";
+  static String op = "";
   static Dimension buttonsize = new Dimension((width - 60) / 3, (height - 60) / 6);
   static Font buttonfont = new Font("Arial", Font.PLAIN, 40);
   static JLabel Label = new JLabel("testing 123");
