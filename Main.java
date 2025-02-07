@@ -3,8 +3,8 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class Main {
-  static short width = 600;
-  static short height = 700;
+  final static short width = 600;
+  final static short height = 700;
   static String a = "0";
   static String b = "0";
   static String op = "0";
