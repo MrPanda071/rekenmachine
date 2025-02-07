@@ -45,6 +45,7 @@ public class Main {
     addopperatorbutton("-", 2, 4);
 
     addcalculatebutton(0, 5);
+    frame.setVisible(true);
 
   }
 
