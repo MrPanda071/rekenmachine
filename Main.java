@@ -8,8 +8,6 @@ public class Main {
   static String a = "0";
   static String b = "0";
   static String op = "0";
-  static int toB = 0;
-  static int andw = 0;
   static Dimension buttonsize = new Dimension((width - 60) / 3, (height - 60) / 6);
   static Font buttonfont = new Font("Arial", Font.PLAIN, 40);
   static JLabel Label = new JLabel("testing 123");
