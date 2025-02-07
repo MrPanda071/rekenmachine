@@ -1,5 +1,7 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import javax.swing.*;
 
 public class Main {
@@ -12,10 +14,17 @@ public class Main {
   static Font buttonfont = new Font("Arial", Font.PLAIN, 40);
   static JLabel Label = new JLabel("testing 123");
   static JFrame frame = new JFrame("rekenmachine");
-
   public static void main(String[] args) {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setSize(width, height);
+    frame.setFocusable(true);
+        frame.requestFocusInWindow();
+    frame.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                int keyCode = e.getKeyCode();
+                System.out.println("Key pressed: " + keyCode);
+            }
+          });
 
     frame.setLayout(new GridBagLayout());
     GridBagConstraints gbc = new GridBagConstraints();
@@ -63,7 +72,7 @@ public class Main {
   }
 
   public static void setoperator(String buttonInput) {
-    if (a != "") {
+    if (b != "") {
       calculate();
     }
     op = buttonInput;
