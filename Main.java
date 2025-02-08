@@ -31,28 +31,46 @@ public class Main {
           addnum("1");
         }
         else if (keyCode == 50 || keyCode == 98) {
-          addnum("1");
+          addnum("2");
         }
         else if (keyCode == 51 || keyCode == 99) {
-          addnum("1");
+          addnum("3");
         }
         else if (keyCode == 52 || keyCode == 100) {
-          addnum("1");
+          addnum("4");
         }
         else if (keyCode == 53 || keyCode == 101) {
-          addnum("1");
+          addnum("5");
         }
         else if (keyCode == 54 || keyCode == 102) {
-          addnum("1");
+          addnum("6");
         }
         else if (keyCode == 55 || keyCode == 103) {
-          addnum("1");
+          addnum("7");
         }
         else if (keyCode == 56 || keyCode == 104) {
-          addnum("1");
+          addnum("8");
         }
         else if (keyCode == 57 || keyCode == 105) {
-          addnum("1");
+          addnum("9");
+        }
+        else if (keyCode == 10) {
+          calculate();
+        }
+        else if (keyCode == 106) {
+          setoperator("*");
+        }
+        else if (keyCode == 111) {
+          setoperator("/");
+        }
+        else if (keyCode == 111) {
+          setoperator("/");
+        }
+        else if (keyCode == 107) {
+          setoperator("+");
+        }
+        else if (keyCode == 109) {
+          setoperator("-");
         }
       }
     });
